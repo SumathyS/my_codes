@@ -24,5 +24,3 @@ mean_absolute_error("ncei", "daymet")
 df.groupby(["ecoregion"])[["ncei", "daymet","gldas","nldas"]].mean_absolute_error()
 #mean is working
 df.groupby(["ecoregion"])[["ncei", "daymet","gldas","nldas"]].mean()
-#cols = ["Date","ncdc","daymet","gldas","nldas","ecoregion"]
-#df[cols] = df[cols].replace({'-1.00E+04':np.nan, -10000.0:np.nan})
