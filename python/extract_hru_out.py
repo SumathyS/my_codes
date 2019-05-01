@@ -64,12 +64,3 @@ et=df_et.loc[df_et['HRU'] == 5.0]
 #                 'NUP': np.float64,'PUP': np.float64,'ORGN': np.float64,'ORGP': np.float64,'SEDP': np.float64,'NSURQ': np.float64,'NLATQ': np.float64,'NO3L': np.float64,'NO3GW': np.float64,'SOLP': np.float64,'P_GW': np.float64,'W_STRS': np.float64,
 #                 'TMP_STRS': np.float64,'N_STRS': np.float64,'P_STRS': np.float64,'BIOM': np.float64,'LAI': np.float64,'YLD': np.float64,'BACTP': np.float64,'BACTLP': np.float64,
 #                'WTAB': np.float64,'WTABELO': np.float64,'SNO_HRU': np.float64,'CMUP_KGH': np.float64,'CMTOT_KGH': np.float64,'QTILE': np.float64,'TNO3': np.float64,'LNO3': np.float64,'GW_Q_D': np.float64,'LATQ_CNT': np.float64,'TVAP': np.float64})
-##f.close()
-##check output df
-#print(type(df))
-#df.shape
-#df.head(3)
-#cols = [0,1,3,5,70,71,72]
-#df1_yield = df[df.columns[cols]]
-#df1_yield.head(3)
-#
