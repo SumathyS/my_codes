@@ -1,0 +1,51 @@
+# sub38ks<- read.csv("E:/Research/swat/Calibration/figures/ihaks.csv", header=TRUE, 
+#                   sep=",")
+sub18ks<- read.csv("E:/Research/swat/Calibration/figures/ihaks18.csv", header=TRUE, 
+                   sep=",")
+attach(sub18ks)
+# Do x and y come from the same distribution?
+ks.test(aaObs38,aaSWAT38)
+ks.test(tcObs38,tcSWAT38)
+ks.test(winterobs38,winterswat38)
+ks.test(springobs38,springswat38)
+ks.test(summerobs38,summerswat38)
+ks.test(Autumnobs38,Autumnswat38)
+
+ks.test(October_O,October_S)
+ks.test(November_O,November_S)
+ks.test(December_O,December_S)
+ks.test(January_O,January_S)
+ks.test(February_O,February_S)
+ks.test(March_O,March_S)
+ks.test(April_O,April_S)
+ks.test(May_O,May_S)
+ks.test(June_O,June_S)
+ks.test(July_O,July_S)
+ks.test(August_O,August_S)
+ks.test(September_O,September_S)
+
+ks.test(X1.day.min_O,X1.day.min_S)
+ks.test(X3.day.min_O,X3.day.min_s)
+ks.test(X7.day.min_O,X7.day.min_S)
+ks.test(X30.day.mi_On,X30.day.min_S)
+ks.test(X90.day.min_O,X90.day.min_S)
+ks.test(X1.day.max_O,X1.day.max_S)
+ks.test(X3.day.max_O,X3.day.max_S)
+ks.test(X7.day.max_O,X7.day.max_S)
+ks.test(X30.day.max_O,X30.day.max_S)
+ks.test(X90.day.max_O,X90.day.max_S)
+ks.test(Base.flowO,Base.flowS)
+ks.test(Zero.daysO,Zero.daysS)
+
+ks.test(Date.minO,Date.minS)
+ks.test(Date.maxO,Date.maxS)
+
+ks.test(Lo.pulse..O,Lo.pulse..S)
+
+ks.test(Lo.pulse.LO,Lo.pulse.LS)
+
+ks.test(Hi.pulse..O,Hi.pulse..S)
+ks.test(Hi.pulse.LO,Hi.pulse.LS)
+ks.test(Rise.rateO,Rise.rateS)
+ks.test(Fall.rateO,Fall.rateS)
+ks.test(ReversalsO,ReversalsS)
