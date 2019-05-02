@@ -30,11 +30,11 @@ df_yield.head(3)
 #extract corn hrus
 corn=df_yield.loc[df_yield['LULC'] == 'CORN']
 
-#extract et for specific hru
+#extract et for specific hru #506
 co_et = [0,1,3,5,11, 85, 86]
 df_et = dfhru[dfhru.columns[co_et]]
 df_et.head(3)
-et=df_et.loc[df_et['HRU'] == 5.0]
+et=df_et.loc[(df_et['HRU'] == 5.0 & 15.0)]
 
 #open hru and saveinto df
 #    for _ in range(8):
